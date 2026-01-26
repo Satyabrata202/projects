@@ -9,10 +9,10 @@
     
     <form id="astroForm">
     <h2 style="display: block;">Astrology Predictions</h2> 
-    <br><div id="parent-container" style="border: 1px solid blue; height: 300px; width: 200px; padding: 15px;  >
+    <br><div id="parent-container" style="border: 1px solid blue; height: 300px; width: 200px; padding: 15px;"  >
     
     <label for="Name">Name</label>
-    <input type="text" style="width: 100%;">
+    <input type="text" id="name" style="width: 100%;">
     <br>
     <label for="Date" required >Date</label><br>
     <input type="number" id="date" min="1" max="31" style="width: 100%; ">
@@ -21,11 +21,12 @@
     <input type="number" id="month" min="1" max="12" style="width: 100%;">
     <br>
     <label for="Year">Year</label>
-    <input type="number" id="year" max="2026" style="width: 100%;">
+    <input type="number" id="year" min="1920" max="2026" style="width: 100%;">
     <br>
     <br>
     <button>Submit</button>
     </form>
+    <p></p>
     </div>
 </body>
 <script src="./seven.js"></script>
